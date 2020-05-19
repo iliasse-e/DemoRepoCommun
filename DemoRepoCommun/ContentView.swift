@@ -16,7 +16,8 @@ struct ContentView: View {
     var body: some View {
         
         NavigationView {
-         
+            
+            ScrollView (.vertical) {
  //       First Board
             
                   
@@ -155,7 +156,7 @@ struct ContentView: View {
                                        .fontWeight(.regular)
                         .font(.system(size: 35))
                     Spacer() .frame(height: 10)
-                    Text("C'est le nombre d'arbres nécéssaire pour compenser votre empreinte carbone de la transport annuelle.")
+                    Text("C'est le nombre d'arbres nécéssaire pour compenser votre empreinte carbone de transport.")
                         .foregroundColor(Color(red: 0.3, green: 0.3, blue: 0.3, opacity: 0.9))
                                                
                    .fontWeight(.medium)
@@ -187,18 +188,22 @@ struct ContentView: View {
 //     Graphique
             
             VStack (alignment: .leading) {
+                
+                
                        
                    ZStack {
+                    
+                    
                            Rectangle()
                                .fill(Color(red: 0.97, green: 0.97, blue: 0.97, opacity: 1.0))
-                               .frame(width: 340, height: 200)
+                               .frame(width: 340, height: 520)
                                .cornerRadius(7)
                                .padding()
                                .shadow(color: .gray, radius: 2, x: 1, y: 1)
-                           Rectangle()
-                                              .fill(Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 1.0))
-                                              .frame(width: 340, height: 2)
-                               .padding(.top, -65)
+                          
+                    
+                    
+                    Chart() 
             
                    }
             }
@@ -214,7 +219,7 @@ struct ContentView: View {
             
         }
     }
-}
+    } }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
