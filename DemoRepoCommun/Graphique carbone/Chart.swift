@@ -159,17 +159,17 @@ struct CarbonEmission : Identifiable {
 
 
 
-var rates = [CarbonEmission(id: 0, month: .janvier, rate: 200, period: .before), CarbonEmission(id: 1, month: .fevrier, rate: 180, period: .before),
-             CarbonEmission(id: 2, month: .mars, rate: 180, period: .before),
-             CarbonEmission(id: 3, month: .avril, rate: 160, period: .before),
-             CarbonEmission(id: 4, month: .mai, rate: 160, period: .before),
-             CarbonEmission(id: 5, month: .juin, rate: 180, period: .before),
-             CarbonEmission(id: 6, month: .juillet, rate: 120, period: .before),
-             CarbonEmission(id: 7, month: .aout, rate: 100, period: .before),
-             CarbonEmission(id: 8, month: .septembre, rate: 210, period: .before),
-             CarbonEmission(id: 9, month: .octobre, rate: 300, period: .before),
-             CarbonEmission(id: 10, month: .novembre, rate: 190, period: .before),
-             CarbonEmission(id: 11, month: .decembre, rate: 230, period: .before)]
+var rates = [CarbonEmission(id: 0, month: .janvier, rate: 220, period: .before), CarbonEmission(id: 1, month: .fevrier, rate: 180, period: .before),
+             CarbonEmission(id: 2, month: .mars, rate: 80, period: .before),
+             CarbonEmission(id: 3, month: .avril, rate: 60, period: .before),
+             CarbonEmission(id: 4, month: .mai, rate: 110, period: .before),
+             CarbonEmission(id: 5, month: .juin, rate: 0, period: .before),
+             CarbonEmission(id: 6, month: .juillet, rate: 0, period: .before),
+             CarbonEmission(id: 7, month: .aout, rate: 0, period: .before),
+             CarbonEmission(id: 8, month: .septembre, rate: 0, period: .before),
+             CarbonEmission(id: 9, month: .octobre, rate: 0, period: .before),
+             CarbonEmission(id: 10, month: .novembre, rate: 0, period: .before),
+             CarbonEmission(id: 11, month: .decembre, rate: 0, period: .before)]
 
 
 var CurrentRates = [

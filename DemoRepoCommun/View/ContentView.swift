@@ -10,7 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
    
-    var O2GeneratePerDay : Int = 2
+    var O2GeneratePerDay : Double = 3.55
+    var numberPlanetNeeded : Double = 2.10
     var numberOftreeNeeded : Int = 99 
     let averageNumberOfTreeNeeded : Int = 116
     var body: some View {
@@ -41,7 +42,7 @@ struct ContentView: View {
                 Spacer()
                 .frame(height: 30)
                 
-        HStack {  Text("\(O2GeneratePerDay)")
+        HStack {  Text("\(O2GeneratePerDay, specifier: "%.1f")")
                     .foregroundColor(Color(red: 0.52, green: 0.79, blue: 0.59, opacity: 1.0))
                     .fontWeight(.regular)
                  .font(.system(size: 60))
@@ -102,7 +103,7 @@ struct ContentView: View {
                 
                         
                     
-            HStack {  Text("\(O2GeneratePerDay)")
+            HStack {  Text("\(numberPlanetNeeded, specifier: "%.1f")")
                         .foregroundColor(Color(red: 0.52, green: 0.79, blue: 0.59, opacity: 1.0))
                         .fontWeight(.regular)
                      .font(.system(size: 60))
@@ -207,17 +208,17 @@ struct ContentView: View {
             
                    }
             }
-            .padding(.leading, 20)
+            .padding(.leading, 10)
             .padding(.top, -15)
                 
                 
             } .navigationBarTitle(("Mes statistiques"), displayMode: .inline)
             
                     .navigationBarItems(trailing:
-                        Button("Reset") {
+                        Button("Reset") { 
                             print("Help tapped!") })
             
-        }
+        } 
     }
     } }
 
